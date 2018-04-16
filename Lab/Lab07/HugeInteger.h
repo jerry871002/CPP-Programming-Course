@@ -1,14 +1,14 @@
 // HugeInteger.h
 #ifndef HUGEINTEGER_H
 #define HUGEINTEGER_H
-class HugeInteger
-{
+class HugeInteger {
 public:
 	// put your member function prototype
 	HugeInteger();
-	HugeInteger(string);
+	HugeInteger(std::string);
 	HugeInteger(int);
 	HugeInteger(HugeInteger&);
+	const HugeInteger& operator=(const HugeInteger&);
 	void output();
 	HugeInteger add(HugeInteger&);
 	HugeInteger subtract(HugeInteger&);
@@ -18,5 +18,5 @@ public:
 private:
 	int *data;
 	int length;
-}
+};
 #endif 
