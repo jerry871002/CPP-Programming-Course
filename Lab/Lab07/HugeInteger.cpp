@@ -58,12 +58,10 @@ const HugeInteger& HugeInteger::operator=(const HugeInteger& right) {
 void HugeInteger::output() {
 	for(int i = length - 1; i >= 0; i--)
 		cout << data[i];
-	//cout << endl << "length = " << length << endl;
 }
 
 HugeInteger HugeInteger::add(HugeInteger& addend) {
 	HugeInteger result;
-	//result.length = ((length >= addend.length) ? length : addend.length);
 
 	int carry = 0;
 	for(int i = 0; i < 40; i++) {
@@ -78,7 +76,6 @@ HugeInteger HugeInteger::add(HugeInteger& addend) {
 	result.length = 1;
 	for(int i = 39; i > 0; i--) {
 		if(result.data[i] > 0){
-			//cout << "hi";
 			result.length = i + 1;
 			break;
 		}
@@ -97,13 +94,11 @@ HugeInteger HugeInteger::subtract(HugeInteger& divisor) {
         	result.data[i] += 10;
 		} else
             borrow = 0;
-        //cout << endl << "i = " << i << ", result.data[i] = " << result.data[i] << endl;
 	}
 
 	result.length = 1;
 	for(int i = 39; i > 0; i--) {
 		if(result.data[i] > 0){
-			//cout << "hi";
 			result.length = i + 1;
 			break;
 		}

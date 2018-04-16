@@ -61,6 +61,6 @@ int main()
 		cout << " is less than ";
 		n2.output();
 		cout << endl;
-	} // end if*/
+	} // end if
 	return 0;
 } 
