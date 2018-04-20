@@ -1,3 +1,5 @@
+//inline function
+
 #include <iostream>
 
 #define PI 3.1415

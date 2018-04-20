@@ -10,6 +10,7 @@ public:
 	HugeInteger(HugeInteger&);
 	const HugeInteger& operator=(const HugeInteger&);
 	void output();
+	friend std::ostream& operator<<(std::ostream&, HugeInteger);
 	HugeInteger add(HugeInteger&);
 	HugeInteger subtract(HugeInteger&);
 	bool isEqualTo(HugeInteger&);

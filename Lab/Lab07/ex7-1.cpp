@@ -9,7 +9,8 @@ int main()
 	HugeInteger n2( "100000000000000" );
 	HugeInteger n4( 5 ); // HugeInteger object n4
 	HugeInteger n5; // HugeInteger object n5
-	n1.output();
+	//n1.output();
+	cout << n1; // we overloaded the operator <<
 	cout << endl;
 	n2.output();
 	cout << endl;

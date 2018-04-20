@@ -1,3 +1,5 @@
+//The way to get current time
+
 #include <iostream>
 #include <string>
 #include <iomanip>

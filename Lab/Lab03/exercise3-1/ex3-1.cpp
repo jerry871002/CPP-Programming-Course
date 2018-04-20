@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Complex.h"
+
 using namespace std;
+
 int main()
 {
 	Complex a, b, c; // create three Complex objects

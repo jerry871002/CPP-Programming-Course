@@ -2,8 +2,10 @@
 #include <iostream>
 #include <string>
 #include "HugeInteger.h"
+
 using namespace std;
 // Member-function definitions for class HugeInteger.
+
 HugeInteger::HugeInteger() {
 	data = new int[40];
 	for(int i = 0; i < 40; i++)
@@ -58,6 +60,12 @@ const HugeInteger& HugeInteger::operator=(const HugeInteger& right) {
 void HugeInteger::output() {
 	for(int i = length - 1; i >= 0; i--)
 		cout << data[i];
+}
+
+ostream& operator<<(ostream& out, HugeInteger num) {
+	for(int i = num.length - 1; i >= 0; i--)
+		out << num.data[i];
+	return out;
 }
 
 HugeInteger HugeInteger::add(HugeInteger& addend) {

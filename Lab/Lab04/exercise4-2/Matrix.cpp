@@ -1,6 +1,8 @@
 #include <iostream>
-using namespace std;
 #include "Matrix.h"
+
+using namespace std;
+
 // Member-function definitions for class Matrix.
 Matrix::Matrix() {
 	for(int i = 0; i < dim*dim; i++)

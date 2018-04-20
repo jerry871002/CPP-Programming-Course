@@ -3,7 +3,7 @@
 /* Write class definition for Matrix and add constructors and destructor*/
 class Matrix{
 private:
-	int dim;//n*n size matrix
+	int dim; //n*n size matrix
 	int *matrix;
 public:
 	Matrix();
