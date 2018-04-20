@@ -49,12 +49,13 @@ HugeInteger::HugeInteger(HugeInteger& source) {
 		data[i] = source.data[i];
 }
 
+// const return avoids: ( a1 = a2 ) = a3
 const HugeInteger& HugeInteger::operator=(const HugeInteger& right) {
 	this->length = right.length;
 	for(int i = 0; i < 40; i++)
 		this->data[i] = right.data[i];
 
-	return (*this);
+	return (*this); // enable x = y = z;
 }
 
 void HugeInteger::output() {
