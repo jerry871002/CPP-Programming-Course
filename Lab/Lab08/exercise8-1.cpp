@@ -10,7 +10,6 @@ private:
 	int x;
 	int y;
 public:
-	// add any member if necessary
 	void setCor(int a, int b) {
 		x = a;
 		y = b;

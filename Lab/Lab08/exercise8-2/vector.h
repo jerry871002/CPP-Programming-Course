@@ -12,8 +12,6 @@ private:
 	int len;
 	T* vec;
 public:
-	// add any member if necessary
-
 	Vector(int n, double x) {
 		len = n;
 		vec = new T[n];
@@ -62,22 +60,27 @@ public:
 		x = a;
 		y = b;
 	}
+
 	int getX() const {return x;}
 	int getY() const {return y;}
+
 	Point2D& operator+=(const Point2D& aDot) {
 		x += aDot.x;
 		y += aDot.y;
 		return (*this);
 	}
+
 	Point2D operator*(const Point2D& aDot) {
 		Point2D result;
 		result.setCor(x * aDot.x, y * aDot.y);
 		return result;
 	}
+
 	void operator=(double num) {
 		x = (int)num;
 		y = (int)num;
 	}
+	
 	friend ostream& operator<<(ostream&, const Point2D&);
 };
 
