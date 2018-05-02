@@ -52,17 +52,19 @@ int main() {
 				cout << iter->first ;
 				cout << setw(10) << iter->second << endl;
 			}
-		}
-		else if(step==2) {
-			string bookName; 
+		} else if(step==2) {
+			string bookName;
+			string temp; 
 			int numOfBook;
 			cout << "enter Name and Number of new book" << endl;
+			//cin.ignore();
 			getline(cin, bookName);
-			getline(cin, numOfBook);
+			cin >> temp;
+			//cin.ignore();
+			cin >> numOfBook;
 			//cin >> bookName >> numOfBook;
 			BookMap[BookMap.size()+1] = Book(bookName, numOfBook);
-		}
-		else if(step==3) {
+		} else if(step==3) {
 			int sellId, sellNum;
 			cout << "enter sell id" << endl;
 			cin >> sellId;
@@ -74,10 +76,11 @@ int main() {
 				iter->second.sellBook(sellNum);
 			else
 				cout << "No such book" << endl;
-		}
-		else if(step==4) { 
+		} else if(step==4) { 
 			break;
-		} 	
+		} else {
+			cout << "Invalid choice" << endl;
+		}	
 	}
 
 	return 0; 
