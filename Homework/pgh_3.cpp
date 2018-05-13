@@ -25,7 +25,10 @@ ostream& operator<<(ostream& out, const Message &m){
 
 int main() {
     priority_queue<Message> msg_queue;
-    string command;
+    // ......
+    string command, name;
+    int parameter, priority_number;
+    
     while (cin >> command) {
         if(command == "GET") {
             if(msg_queue.empty())
@@ -35,8 +38,6 @@ int main() {
                 msg_queue.pop();
             }
         } else if (command == "PUT") {
-            string name;
-            int parameter, priority_number;
             cin >> name >> parameter >> priority_number;
             Message m(name, parameter, priority_number);
             msg_queue.push(m);
