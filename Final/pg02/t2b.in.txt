@@ -1,0 +1,51 @@
+Graduated 
+9983412	
+A	
+Research 80	
+Math	90	
+English 70	
+Graduated 
+9983400	
+B	
+Research 90	
+Math	100	
+English 80	
+Graduated 
+9983333	
+A	
+Research 50
+Math	50	
+English 60
+Undergraduate 
+9913222	
+B	
+Math	90	
+English 70	
+Undergraduate 
+9913111	
+A	
+Math	50	
+English 20	
+Undergraduate 
+9988292	
+A	
+Math	90	
+English 90
+Graduated 
+9888888	
+B	
+Research 90	
+Math	100	
+English 100	
+Graduated 
+9718181	
+A	
+Research 70	
+Math	60	
+English 60
+Undergraduate 
+0077777	
+B	
+Math	98	
+English 40		
+	
