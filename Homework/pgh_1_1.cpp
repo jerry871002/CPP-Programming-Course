@@ -14,10 +14,10 @@ int main()
 
 template <class T>
 void findMax(T a, T b, T c) {
-	T max = a;
-	if(b > max)
-		max = b;
-	if(c > max)
-		max = c;
-	cout << max << endl;
+    T max = a;
+    if(b > max)
+        max = b;
+    if(c > max)
+        max = c;
+    cout << max << endl;
 }
